@@ -16,7 +16,7 @@ class GuzzleHttpTest extends \PHPUnit_Framework_TestCase
 
 
         $this->client = $this->getMockBuilder('GuzzleHttp\Client')
-
+            ->setMethods(array('send'))
             ->getMock();
     }
 
@@ -59,7 +59,7 @@ class GuzzleHttpTest extends \PHPUnit_Framework_TestCase
                 $this->equalTo('http://google.com'),
                 $this->equalTo(array(
                     'Content-Type' => 'application/json',
-                    'X-Postmark-Server-Token' => 'MySuperToken', 
+                    'X-Postmark-Server-Token' => 'MySuperToken',
                 )),
                 $this->equalTo('content')
             )
