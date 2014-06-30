@@ -21,7 +21,8 @@
     },
     "require-dev" : {
         "kriswallsmith/buzz" : "*",
-        "guzzle/guzzle"      : "*"
+        "guzzle/guzzle"      : "*",
+        "guzzlehttp/guzzle"  : "*"
     },
     "suggest" : {
         "stof/stampie-extra" : "Extensions for Stampie",
